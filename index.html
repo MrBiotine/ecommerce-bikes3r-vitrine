@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bikes3R Vente</title>             
+            <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+            <link rel="stylesheet" href="css/style.css">                
+    </head>
+    
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav_logo">
+                    <i class='bx bx-cycling nav_logo-icon' ></i> Bikes3R
+                </a>
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">Accueil</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#new" class="nav_link">New</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#products" class="nav_link">Nos Vélos</a>
+                        </li>
+                    </ul>
+                    <div class="nav_close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav_btns">
+                                    <a href="#" ><i class='bx bxs-user bx-md' ></i></a>
+                    <a href="#" ><i class='bx bx-log-in-circle bx-md'></i></a>
+
+                                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <div class="nav_shop" id="cart-shop">
+                        <a href="#"><i class='bx bx-shopping-bag' ></i></a>
+                    </div>
+
+                    <div class="nav_toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <!--==================== CART ====================-->
+        <div class="cart" id="cart">
+        <i class='bx bx-x cart_close' id="cart-close"></i>
+
+        <h2 class="cart_title-center">Mon panier</h2>
+
+        <div class="cart_container">
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="img/velo-singlespeed-alu_drop-schindelhauer-hektor.jpg" alt="" class="cart_img">
+                </div>
+
+                <div class="cart_details">
+                    <h3 class="cart_title">Jazzmaster</h3>
+                    <span class="cart_price">1050€</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <a href="#" class="cart_amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </a>
+
+                            <span class="cart_amount-number">1</span>
+
+                            <span class="cart_amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart_amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="img/velo-singlespeed-alu_drop-atk-brut.jpg" alt="" class="cart_img">
+                </div>
+
+                <div class="cart_details">
+                    <h3 class="cart_title">Rose Gold</h3>
+                    <span class="cart_price">850€</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart_amount-number">1</span>
+
+                            <span class="cart_amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart_amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="img/velo-singlespeed-alu_drop-cool-smoke.jpg" alt="" class="cart_img">
+                </div>
+
+                <div class="cart_details">
+                    <h3 class="cart_title">Longines Rose</h3>
+                    <span class="cart_price">980€</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart_amount-number">1</span>
+
+                            <span class="cart_amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart_amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart_prices">
+            <span class="cart_prices-item">3 produits</span>
+            <span class="cart_prices-total">2880€</span>
+        </div>
+    </div>
+<main class="main">
+    
+        <!--==================== HOME ====================-->
+    <section class="home section container" id="home">
+       <div class="hero-image">
+           <div class="home_data">
+               <h1 class="home_title">Vélos simples robustes <br> rapides</h1>
+               <p class="home_description">
+                   Roulez avec un maximum de plaisir et sans prise de tête !!
+               </p>
+                   <a href="#products" class="home_button">
+                       Découvrez nos vélos
+                   </a>
+               </div>
+           </div>
+       </div>
+    </section>    
+        <!--==================== NEW ====================-->
+    <section class="new section container" id="new">
+    <h2 class="section_title">
+        Les nouveautés
+    </h2>
+    
+    <div class="new_container">
+        <div class="swiper new-swiper">
+            <div class="swiper-wrapper">
+                                <article class="new_card swiper-slide">
+                    <span class="new_tag">New</span>
+
+                    <img src="img/velo-singlespeed-acier_horn-matte-black.jpg" alt="Line MatterBlack" class="new_img">
+
+                    <div class="new_data">
+                        <h3 class="new_title">Line MatterBlack</h3>
+                        <span class="new_price">450.50 €</span>
+                    </div>
+
+                    <a href="/home/cart/add/12" class="button new_button">AJOUTER AU PANIER</a>
+                </article>
+                                <article class="new_card swiper-slide">
+                    <span class="new_tag">New</span>
+
+                    <img src="img/velo-singlespeed-acier_horn-line-wulf.jpg" alt="Line Wulf" class="new_img">
+
+                    <div class="new_data">
+                        <h3 class="new_title">Line Wulf</h3>
+                        <span class="new_price">450.50 €</span>
+                    </div>
+
+                    <a href="/home/cart/add/11" class="button new_button">AJOUTER AU PANIER</a>
+                </article>
+                                <article class="new_card swiper-slide">
+                    <span class="new_tag">New</span>
+
+                    <img src="img/velo-singlespeed-acier_horn-line-rigby.jpg" alt="Line Rigby" class="new_img">
+
+                    <div class="new_data">
+                        <h3 class="new_title">Line Rigby</h3>
+                        <span class="new_price">450.50 €</span>
+                    </div>
+
+                    <a href="/home/cart/add/10" class="button new_button">AJOUTER AU PANIER</a>
+                </article>
+                                <article class="new_card swiper-slide">
+                    <span class="new_tag">New</span>
+
+                    <img src="img/velo-singlespeed-alu_drop-midnight-blue.jpg" alt="Midnight Blue - M" class="new_img">
+
+                    <div class="new_data">
+                        <h3 class="new_title">Midnight Blue - M</h3>
+                        <span class="new_price">849.95 €</span>
+                    </div>
+
+                    <a href="/home/cart/add/9" class="button new_button">AJOUTER AU PANIER</a>
+                </article>
+                
+                                       
+            </div>
+        </div>
+    </div>
+</section>
+<!--====================    SAMPLE PRODUCTS ====================-->
+<section class="products section container" id="products">
+    <h2 class="section_title">
+        Nos Vélos
+    </h2>
+
+    <div class="products_container grid">
+                <article class="products_card">
+            <img src="img/velo-singlespeed-acier_horn-army-green.jpg" alt="Army Green - M" class="products_img">
+
+            <h3 class="products_title">Army Green - M</h3>
+            <span class="products_price">590.95 €</span>
+
+            <button class="products_button">
+                <i class='bx bx-shopping-bag'></i>
+            </button>
+        
+        </article>
+                <article class="products_card">
+            <img src="img/velo-singlespeed-alu_drop-atk-brut.jpg" alt="Atk Brut - M" class="products_img">
+
+            <h3 class="products_title">Atk Brut - M</h3>
+            <span class="products_price">889.00 €</span>
+
+            <button class="products_button">
+                <i class='bx bx-shopping-bag'></i>
+            </button>
+        
+        </article>
+                <article class="products_card">
+            <img src="img/velo-singlespeed-acier_riser-beach-bum.jpg" alt="Beach Bump" class="products_img">
+
+            <h3 class="products_title">Beach Bump</h3>
+            <span class="products_price">399.90 €</span>
+
+            <button class="products_button">
+                <i class='bx bx-shopping-bag'></i>
+            </button>
+        
+        </article>
+                <article class="products_card">
+            <img src="img/velo-singlespeed-acier_horn-matte-black.jpg" alt="Line MatterBlack" class="products_img">
+
+            <h3 class="products_title">Line MatterBlack</h3>
+            <span class="products_price">450.50 €</span>
+
+            <button class="products_button">
+                <i class='bx bx-shopping-bag'></i>
+            </button>
+        
+        </article>
+                <article class="products_card">
+            <img src="img/velo-singlespeed-acier_horn-line-rigby.jpg" alt="Line Rigby" class="products_img">
+
+            <h3 class="products_title">Line Rigby</h3>
+            <span class="products_price">450.50 €</span>
+
+            <button class="products_button">
+                <i class='bx bx-shopping-bag'></i>
+            </button>
+        
+        </article>
+                <article class="products_card">
+            <img src="img/velo-singlespeed-acier_horn-line-wulf.jpg" alt="Line Wulf" class="products_img">
+
+            <h3 class="products_title">Line Wulf</h3>
+            <span class="products_price">450.50 €</span>
+
+            <button class="products_button">
+                <i class='bx bx-shopping-bag'></i>
+            </button>
+        
+        </article>
+             <a href="/bike/" class="button">Liste des vélos</a>   
+    </div>
+</section>
+<!--==================== NEWSLETTER ====================-->
+<section class="newsletter section container">
+    <div class="newsletter_bg grid">
+        <div>
+            <h2 class="newsletter_title">Recevez nos <br> Actualités</h2>
+            <p class="newsletter_description">
+                Inscrivez-vous si vous souhaitez être informé de nos dernières nouveautés et mises à jour
+            </p>
+        </div>
+
+        <form action="" class="newsletter_subscribe">
+            <input type="email" placeholder="Entrer votre email" class="newsletter_input">
+            <button class="button">
+                INSCRIPTION
+            </button>
+        </form>
+    </div>
+</section> 
+
+    </main>
+           
+                <footer class="footer section">
+            <div class="footer_container container grid">
+                <div class="footer_content">
+                    <h3 class="footer_title">Informations</h3>
+
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#" class="footer_link">Qui sommes-nous ?</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">Paiement sécurisé</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">Livraisons</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">CGV</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">Confidentialité</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_content">
+                    <h3 class="footer_title">Produits</h3>
+
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#" class="footer_link">SingleSpeed Acier</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">SingleSpeed Alu</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_content">
+                    <h3 class="footer_title">Service Client</h3>
+
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#" class="footer_link"><i class='bx bx-question-mark'></i> Notre FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link"><i class='bx bx-envelope'></i> Contactez-nous</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="footer_content">
+                    <h3 class="footer_title">Social</h3>
+
+                    <ul class="footer_social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer_social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a href="https://joinmastodon.org/fr" target="_blank" class="footer_social-link">
+                            <i class='bx bxl-mastodon'></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer_social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer_copy">&#169; By Doué Bruno </span>
+        </footer>
+                <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup_icon' ></i>
+        </a>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>       
+
+              
+</body>
+</html>
+
